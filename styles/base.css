@@ -18,6 +18,7 @@
     --R: 'Roboto', sans-serif;
     --M: 'Montserrat', sans-serif;
     --C: 'Comfortaa', sans-serif;
+    --b: #000;
 }
 
 
@@ -34,3 +35,22 @@ body {
     margin: 0 auto;
     padding: 0 15px;
 }
+
+.btn {
+    padding: 16px 48px;
+    background: var(--bg);
+    border: none;
+    border-radius: 4px;
+    color: var(--w);
+    font-family: var(--R);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+@media (hover: hover) {
+    .btn:hover {
+        background: var(--lightOrange);
+        color: var(--b);
+    }
+}
+
