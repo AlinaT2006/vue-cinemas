@@ -1,0 +1,127 @@
+.films {
+    padding: 60px 0;
+}
+
+.films__wrap {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 360px;
+    gap: 30px;
+    margin: 60px 0;
+}
+
+.films__title a {
+    font-family: var(--C);
+    font-size: 36px;
+    font-weight: 400;
+    color: var(--w);
+    position: relative;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.films__title a:hover {
+    color: var(--orange);
+}
+
+.films__title a::after {
+    content: '';
+    position: absolute;
+    border-radius: 10px 10px 0 0;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0%;
+    height: 3px;
+    transition: 0.3s;
+    background: var(--orange);
+}
+
+.films__title a:hover::after {
+    width: 100%;
+}
+
+
+.films__wrap-card1 {
+    position: relative;
+    z-index: 1;
+    background: url(../img/Black_Panther_film_poster\ 1.png) no-repeat;
+    border-radius: 6px;
+}
+
+.films__wrap-card2 {
+    position: relative;
+    z-index: 1;
+    background: url(../img/Black_Panther_film_poster\ 2.png) no-repeat;
+    border-radius: 6px;
+}
+
+.films__wrap-card3 {
+    position: relative;
+    z-index: 1;
+    background: url(../img/Black_Panther_film_poster\ 3.png) no-repeat;
+    border-radius: 6px;
+}
+
+.films__wrap-card4 {
+    position: relative;
+    z-index: 1;
+    background: url(../img/Black_Panther_film_poster\ 4.png) no-repeat;
+    border-radius: 6px;
+}
+
+.films__wrap-card-bg {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(../img/bg.png) no-repeat;
+    border-radius: 6px;
+}
+
+.films__wrap-card-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 15px 20px;
+}
+
+.films__wrap-card-desc_btn {
+    color: var(--w);
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.films__wrap-card-desc_time {
+    font-family: var(--M);
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--w);
+    border: 1px solid #FFFFFF;
+    padding: 7px 28px;
+    border-radius: 9px;
+    margin-bottom: 30px;
+}
+
+.films__wrap-card-desc_title {
+    font-family: var(--M);
+    font-size: 22px;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.films__wrap-card-desc_text {
+    font-family: var(--R);
+    font-size: 14px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 1110px ) {
+    .films__wrap {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
